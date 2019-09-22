@@ -14,3 +14,6 @@ Create a game inspired by one of the games currently in the collection of the  M
 - https://lsudigitalart.github.io/2210hw4-EmiliePitre/
 - https://lsudigitalart.github.io/2210hw4-kbotto1/
 - https://lsudigitalart.github.io/2210hw4-gus6922/
+
+
+Made a pong game will tweek. was somehow missing my git repo. seems ok now.
