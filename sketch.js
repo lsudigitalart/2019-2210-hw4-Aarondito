@@ -28,7 +28,7 @@ function setup() {
 } 
 
 function draw() { 
- 			background(0,0,25,50);
+ 			background(0,0,160);
   		fill(25,65,125);
 			line(width/2,0,width/2,height);
 	
@@ -37,7 +37,7 @@ function draw() {
 		
 		paddles();
 		bounce();
-  
+		fill(255,0,0);
 		text(p1points,500,100);
   	text(p2points,1000,100);
 		
@@ -56,10 +56,12 @@ function draw() {
  	
 	}	
 	
-		
+	
 	ballX = ballX + ballVX;
 	ballY = ballY + ballVY;
+	fill(255,255,153);
 	ellipse(mouseX,mouseY,r1);
+	fill(25,65,125);
 	ellipse(ballX,ballY,BallR);
 		
 	}
@@ -70,7 +72,7 @@ function paddles() {
 	  if(key == 'w') {
     	pad1Vel -= speed;  
     } else
-    if(key == 's') {
+    if(key == 'z') {
     	pad1Vel += speed;  
     }
 		
