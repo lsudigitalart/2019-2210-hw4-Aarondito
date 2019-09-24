@@ -61,7 +61,7 @@ function draw() {
 	ballX = ballX + ballVX;
 	ballY = ballY + ballVY;
 	fill(255,255,153); //mouse 
-	ellipse(mouseX,mouseY,r1);
+	ellipse(mouseX,mouseY,100,100,r1);
 	fill(60,255,0); //ball
 	ellipse(ballX,ballY,BallR);
 		
