@@ -15,6 +15,9 @@ var speed = 22;
 var velMulti = 0.75;
 var p1points = 0;
 var p2points = 0;
+
+
+
 function setup() { 
   createCanvas(1500, 725);
 	noStroke();
@@ -28,8 +31,21 @@ function setup() {
   
 } 
 
+
 function draw() { 
- 			background(0,0,160);
+			 background(0,0,160);
+			 
+			 for(let y = 5; y < 750; y += 25){
+				for(let x = 5; x < 1500; x += 110){
+				 
+				  
+				  stroke(0,191,255); //dot
+				  strokeWeight(3);
+				  fill(color(255,0,0));
+				  circle(x, y, 5);
+		  
+				}
+			  }
 			 fill(255,255,102);
 			line(width/2,0,width/2,height);
 	
