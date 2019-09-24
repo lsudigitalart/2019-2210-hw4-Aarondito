@@ -6,7 +6,7 @@ var r1 = 20;
 var BallR = 50;
 var ballVX = 0;
 var ballVY = 0;
-var Bspeed = 50;
+var Bspeed = 400;
 var pad1 = 400;
 var pad2 = 400;
 var pad1Vel = 0;
@@ -22,14 +22,15 @@ function setup() {
 	textSize(400);
 	angleMode(DEGREES);
   rectMode(CENTER);
-	 ballVX = random(-5,5);
- ballVY = random(2,4);
-  textSize(50);
+	 ballVX = random(15,5);
+ ballVY = random(15,10);
+  textSize(100);
+  
 } 
 
 function draw() { 
  			background(0,0,160);
-  		fill(25,65,125);
+			 fill(255,255,102);
 			line(width/2,0,width/2,height);
 	
 	
@@ -37,7 +38,7 @@ function draw() {
 		
 		paddles();
 		bounce();
-		fill(255,0,0);
+		fill(255,0,0); //score
 		text(p1points,500,100);
   	text(p2points,1000,100);
 		
@@ -51,17 +52,17 @@ function draw() {
 	
 	ballX = mouseX + (ballX-mouseX)*(r1+BallR)/dist(mouseX,mouseY,ballX,ballY);
 	ballY = mouseY + (ballY-mouseY)*(r1+BallR)/dist(mouseX,mouseY,ballX,ballY);
-	ballVX = (ballX - mouseX) / 3;
-	ballVY = (ballY - mouseY) / 3;	
+	ballVX = (ballX - mouseX) / 1;
+	ballVY = (ballY - mouseY) / 1;	
  	
 	}	
 	
 	
 	ballX = ballX + ballVX;
 	ballY = ballY + ballVY;
-	fill(255,255,153);
+	fill(255,255,153); //mouse 
 	ellipse(mouseX,mouseY,r1);
-	fill(25,65,125);
+	fill(60,255,0); //ball
 	ellipse(ballX,ballY,BallR);
 		
 	}
@@ -84,7 +85,7 @@ function paddles() {
     	pad1 = 50;  
     }
 		
-	rect(50,pad1,20,100);
+	rect(50,pad1,20,300);
 		
   
   if(keyIsDown(UP_ARROW)) {
@@ -103,7 +104,7 @@ function paddles() {
     }
 		
 	
-rect(1450,pad2,20,100);
+rect(1450,pad2,20,200);
 
 }
 
