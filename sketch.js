@@ -35,7 +35,7 @@ function setup() {
 function draw() { 
 			 background(0,0,160);
 			 
-			 for(let y = 5; y < 750; y += 25){
+			 for(let y = 5; y < 750; y += 60){
 				for(let x = 5; x < 1500; x += 110){
 				 
 				  
